@@ -1,0 +1,101 @@
+body 
+{
+  text-indent:15px;
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: white;
+}
+
+.w3-white h5
+{
+  display:block;
+  margin-top:35px;
+  font-size:20px;
+  color:gray;
+}
+
+.w3-white p
+{
+  display:block;
+  margin-top:35px;
+  color:gray;
+}
+
+.w3-white
+{
+  width:75%;
+  margin-top:50px;
+  margin-left:200px;
+  margin-bottom:50px;
+  height:550px;
+  border-radius:10px;
+  box-shadow:5px 10px 8px #222222 ;
+}
+
+#TitleContent
+{
+  line-height:15px;
+  max-width:50%;
+}
+
+#TitleContent h2
+{
+   color: #666666;
+}
+
+#TitleContent p
+{
+  color:gray;
+}
+
+#image img
+{
+  border-radius:0 10px 10px 0px;
+  margin-top:0px;
+  margin-right:-16px;
+  float:right;
+  width: 400px;
+  height: 550px;
+}
+
+#Options button
+{
+  border:1px solid #e0e1e2;
+  font-size:15px;
+  color:#474747;
+  background-color:white;
+  border-radius:5px;
+  display:block;
+  width:400px;
+  height:55px;
+  margin-left:50px;
+  line-height:25px;   
+  transition-duration: 0.4s;
+}
+
+#Options button:hover
+{
+    box-shadow: 0 12px 10px 0                     rgba(0,0,0,0.24), 0 17px 50px 0               rgba(0,0,0,0.19);
+}
+
+#Options i
+{
+  position:relative;
+  font-size:25px;
+  float:left;
+  margin-left:10px;
+}
+
+.fa-google-plus
+{
+  color:#d34836;
+}
+
+.fa-facebook-square
+{
+  color:#3b5998;
+}
+
+.fa-twitter-square
+{
+  color:#55acee;
+}

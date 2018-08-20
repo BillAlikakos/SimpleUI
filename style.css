@@ -7,7 +7,6 @@ body
 
 .w3-white h5
 {
-  display:block;
   margin-top:35px;
   font-size:20px;
   color:gray;
@@ -20,15 +19,126 @@ body
   color:gray;
 }
 
+
 .w3-white
 {
   width:75%;
-  margin-top:50px;
-  margin-left:200px;
-  margin-bottom:50px;
-  height:550px;
+  margin-top:5%;
+  margin-left:15%;
+  margin-bottom:25%;
+  height:75%;
   border-radius:10px;
   box-shadow:5px 10px 8px #222222 ;
+}
+/*Different parallax sizes from 1000px to 1300px*/
+@media only screen and (min-width: 1300px)
+{
+  .parallax
+  {
+     margin-right:-16px;
+    border-radius:0 10px 10px 0px;
+    float:right;
+    background-position: center;
+    background-image:   url("https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=b36b906a04b09e04e0193248861a6f68");
+    overflow: hidden;
+    background-size: cover;
+    height: 40rem; 
+    width:35rem;
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+}
+
+@media only screen and (min-width: 1200px)
+{
+  .parallax
+  {
+     margin-right:-16px;
+    border-radius:0 10px 10px 0px;
+    float:right;
+    background-position: center;
+    background-image:   url("https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=b36b906a04b09e04e0193248861a6f68");
+    overflow: hidden;
+    background-size: cover;
+    height: 40rem; 
+    width:30rem;
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+}
+
+@media only screen and (min-width: 1100px)
+{
+  .parallax
+  {
+     margin-right:-16px;
+    border-radius:0 10px 10px 0px;
+    float:right;
+    background-position: center;
+    background-image:   url("https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=b36b906a04b09e04e0193248861a6f68");
+    overflow: hidden;
+    background-size: cover;
+    height: 41rem; 
+    width:28rem;
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+
+}
+@media only screen and (min-width: 1000px)
+{
+  .parallax
+  {
+     margin-right:-16px;
+    border-radius:0 10px 10px 0px;
+    float:right;
+    background-position: center;
+    /*background-image:   url("https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=b36b906a04b09e04e0193248861a6f68");*/
+    background-image: url(https://images.unsplash.com/photo-1519794206461-cccd885bf209?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=773b41aba208e92ceb1b0780996b8d6d);
+    overflow: hidden;
+    background-size: cover;
+    height: 45rem; 
+    width:25rem;
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+}
+
+.parallax /*Grayscale the parallax image*/
+{
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+  transition:0.4s;
+}
+.parallax:hover /*Colorize on hover*/
+{
+   filter: none;
+  -webkit-filter: grayscale(0%);
+}
+
+#Options button
+{
+  border:1px solid #e0e1e2;
+  font-size:15px; 
+  color:#474747;
+  background-color:white;
+  border-radius:5px;
+  display:block;
+  min-width:245px;
+  width:auto;
+  height:55px;
+  margin-left:50px;
+  line-height:25px;   
+  transition-duration: 0.4s;
 }
 
 #TitleContent
@@ -45,31 +155,6 @@ body
 #TitleContent p
 {
   color:gray;
-}
-
-#image img
-{
-  border-radius:0 10px 10px 0px;
-  margin-top:0px;
-  margin-right:-16px;
-  float:right;
-  width: 400px;
-  height: 550px;
-}
-
-#Options button
-{
-  border:1px solid #e0e1e2;
-  font-size:15px;
-  color:#474747;
-  background-color:white;
-  border-radius:5px;
-  display:block;
-  width:400px;
-  height:55px;
-  margin-left:50px;
-  line-height:25px;   
-  transition-duration: 0.4s;
 }
 
 #Options button:hover
